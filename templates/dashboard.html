@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Housing Market Analysis{% endblock %}
+
+{% block content %}
+<h1 class="page-title">📊 Interactive Dashboard</h1>
+
+<div class="content-box">
+    <h2 style="color: #2c3e50; margin-bottom: 10px;">Comprehensive House Data Analysis</h2>
+    <p style="color: #666; margin-bottom: 30px;">
+        Explore the complete housing market dataset with interactive filters. Analyze trends by sale price, house age,
+        and renovation status. Use the filters below to customize your analysis.
+    </p>
+
+    <div class="info-section" style="margin-bottom: 30px;">
+        <h3>💡 Tips for Using the Dashboard</h3>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li>Use the <strong>Sale Price filter</strong> to focus on specific price ranges</li>
+            <li>Adjust the <strong>Age of House slider</strong> to see properties of specific ages</li>
+            <li>Hover over charts to see detailed information</li>
+            <li>Click on legend items to show/hide data series</li>
+            <li>Right-click charts to download images or access more options</li>
+        </ul>
+    </div>
+
+    <div class="tableau-container">
+        <iframe
+            src="https://public.tableau.com/views/House_Analytics/ComprehensiveHouseDataAnalysis?:showVizHome=no&:embed=true"
+            width="100%"
+            height="800"
+            frameborder="0"
+            allow="fullscreen">
+        </iframe>
+    </div>
+
+    <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;">
+        <h3 style="color: #2c3e50; margin-bottom: 15px;">📈 Dashboard Components</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 4px;">
+                <h4 style="color: #667eea; margin-bottom: 10px;">KPI Overview</h4>
+                <p style="font-size: 13px; color: #666;">Total records count, average sale price, and total basement area metrics.</p>
+            </div>
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 4px;">
+                <h4 style="color: #667eea; margin-bottom: 10px;">Histogram</h4>
+                <p style="font-size: 13px; color: #666;">Sales distribution by years since renovation with price binning.</p>
+            </div>
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 4px;">
+                <h4 style="color: #667eea; margin-bottom: 10px;">Pie Chart</h4>
+                <p style="font-size: 13px; color: #666;">House age distribution broken down by renovation status.</p>
+            </div>
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 4px;">
+                <h4 style="color: #667eea; margin-bottom: 10px;">Grouped Bar Chart</h4>
+                <p style="font-size: 13px; color: #666;">Property features (bathrooms, bedrooms, floors) by house age groups.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Housing Market Analysis{% endblock %}
+
+{% block content %}
+<h1 class="page-title">📊 Comprehensive Housing Market Analysis</h1>
+
+<div class="content-box">
+    <h2 style="color: #2c3e50; margin-bottom: 20px;">Welcome to the Housing Market Analysis Dashboard</h2>
+
+    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        Explore comprehensive insights into housing market trends, property characteristics, and renovation patterns
+        across 21,609 housing transactions. This interactive platform provides data-driven analysis to help stakeholders
+        understand market dynamics and make informed real estate decisions.
+    </p>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Total Records</h3>
+            <div class="number">21,609</div>
+            <p style="margin-top: 10px; font-size: 12px;">Housing Transactions</p>
+        </div>
+        <div class="stat-card">
+            <h3>Average Sale Price</h3>
+            <div class="number">$511,619</div>
+            <p style="margin-top: 10px; font-size: 12px;">Mean Property Value</p>
+        </div>
+        <div class="stat-card">
+            <h3>Total Basement Area</h3>
+            <div class="number">38.6M</div>
+            <p style="margin-top: 10px; font-size: 12px;">Square Feet</p>
+        </div>
+        <div class="stat-card">
+            <h3>Never Renovated</h3>
+            <div class="number">95.8%</div>
+            <p style="margin-top: 10px; font-size: 12px;">Of Properties</p>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <h3>📈 Key Features</h3>
+        <p>
+            <strong>Interactive Dashboard:</strong> Explore real-time visualizations with filters for sale price, house age, and renovation status.
+        </p>
+        <p style="margin-top: 10px;">
+            <strong>Story-Driven Analysis:</strong> Follow our guided narrative through the data with insights at each step.
+        </p>
+        <p style="margin-top: 10px;">
+            <strong>Market Insights:</strong> Understand property characteristics, pricing trends, and renovation patterns.
+        </p>
+    </div>
+
+    <div class="info-section">
+        <h3>🎯 What's Inside</h3>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li>KPI Overview (Count, Average Price, Total Basement Area)</li>
+            <li>Total Sales Distribution by Years Since Renovation</li>
+            <li>House Age Distribution by Renovation Status</li>
+            <li>Property Features Analysis (Bathrooms, Bedrooms, Floors by Age)</li>
+            <li>Interactive Filters for Custom Analysis</li>
+            <li>Guided Storyboard for Data Exploration</li>
+        </ul>
+    </div>
+
+    <h3 style="color: #2c3e50; margin-top: 30px; margin-bottom: 20px;">Get Started</h3>
+    <p style="margin-bottom: 20px;">
+        Choose how you'd like to explore the data:
+    </p>
+
+    <div class="button-group">
+        <a href="/dashboard" class="btn">📊 View Dashboard</a>
+        <a href="/storyboard" class="btn btn-secondary">📖 Read the Story</a>
+        <a href="/about" class="btn">ℹ️ Learn More</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Storyboard - Housing Market Analysis{% endblock %}
+
+{% block content %}
+<h1 class="page-title">📖 Housing Market Story</h1>
+
+<div class="content-box">
+    <h2 style="color: #2c3e50; margin-bottom: 10px;">Guided Data Story</h2>
+    <p style="color: #666; margin-bottom: 30px;">
+        Follow our narrative journey through the housing market data. This interactive storyboard guides you through
+        key insights step by step, building a comprehensive understanding of market trends and patterns.
+    </p>
+
+    <div class="info-section" style="margin-bottom: 30px;">
+        <h3>📚 About the Storyboard</h3>
+        <p>
+            This story presents five key insights from our analysis:
+        </p>
+        <ol style="margin-left: 20px; margin-top: 10px;">
+            <li><strong>Dataset Overview:</strong> Introduction to the 21,609 housing records</li>
+            <li><strong>Renovation Timeline:</strong> Understanding renovation patterns and sales distribution</li>
+            <li><strong>Age Distribution:</strong> How house age varies across renovation status</li>
+            <li><strong>Property Features:</strong> Correlation between house age and property characteristics</li>
+            <li><strong>Interactive Analysis:</strong> Tools for exploring market patterns</li>
+        </ol>
+    </div>
+
+    <div class="tableau-container">
+        <iframe
+            src="https://public.tableau.com/views/House_Analytics/HousingMarketStory?:showVizHome=no&:embed=true"
+            width="100%"
+            height="800"
+            frameborder="0"
+            allow="fullscreen">
+        </iframe>
+    </div>
+
+    <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;">
+        <h3 style="color: #2c3e50; margin-bottom: 15px;">🎯 How to Navigate</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;">
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 4px;">
+                <h4 style="color: #667eea; margin-bottom: 10px;">⬅️ Previous</h4>
+                <p style="font-size: 13px; color: #666;">Click the left arrow to go to the previous story point.</p>
+            </div>
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 4px;">
+                <h4 style="color: #667eea; margin-bottom: 10px;">➡️ Next</h4>
+                <p style="font-size: 13px; color: #666;">Click the right arrow to advance to the next story point.</p>
+            </div>
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 4px;">
+                <h4 style="color: #667eea; margin-bottom: 10px;">🔍 Explore</h4>
+                <p style="font-size: 13px; color: #666;">Use filters within each story point to explore further.</p>
+            </div>
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 4px;">
+                <h4 style="color: #667eea; margin-bottom: 10px;">📊 Full Dashboard</h4>
+                <p style="font-size: 13px; color: #666;">Visit the dashboard for unfiltered interactive analysis.</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 30px; text-align: center;">
+        <p style="color: #666; margin-bottom: 20px;">Want to explore the data in more detail?</p>
+        <a href="/dashboard" class="btn">Go to Full Dashboard →</a>
+    </div>
+</div>
+{% endblock %}

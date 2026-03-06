@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block title %}About - Housing Market Analysis{% endblock %}
+
+{% block content %}
+<h1 class="page-title">ℹ️ About This Project</h1>
+
+<div class="content-box">
+    <h2 style="color: #2c3e50; margin-bottom: 20px;">Housing Market Trends Analysis</h2>
+
+    <div class="info-section">
+        <h3>📋 Project Overview</h3>
+        <p>
+            This project provides a comprehensive analysis of housing market trends using data visualization and interactive analytics.
+            The dataset contains 21,609 housing transaction records with detailed information about property characteristics,
+            pricing, and renovation status.
+        </p>
+    </div>
+
+    <div class="info-section">
+        <h3>🎯 Project Goals</h3>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li>Provide clear insights into housing market patterns and trends</li>
+            <li>Enable data-driven decision making for real estate stakeholders</li>
+            <li>Visualize relationships between property age, features, and pricing</li>
+            <li>Understand renovation patterns and their impact on market values</li>
+            <li>Create an interactive platform for market exploration</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h3>📊 Data Specifications</h3>
+        <p><strong>Dataset Name:</strong> Transformed_Housing_Data2</p>
+        <p><strong>Total Records:</strong> 21,609 housing transactions</p>
+        <p><strong>Key Metrics:</strong></p>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li>Sale Price (Range: $75,000 - $1,129,575)</li>
+            <li>Property Age (Range: 3 - 118 years)</li>
+            <li>Number of Bedrooms, Bathrooms, and Floors</li>
+            <li>Basement and Living Areas</li>
+            <li>Renovation Status and Years Since Renovation</li>
+            <li>Zipcode Groups for Geographic Analysis</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h3>🔧 Technology Stack</h3>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li><strong>Data Visualization:</strong> Tableau Public</li>
+            <li><strong>Backend:</strong> Flask (Python)</li>
+            <li><strong>Frontend:</strong> HTML5, CSS3</li>
+            <li><strong>Data Processing:</strong> Python (Pandas, NumPy)</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h3>📈 Key Visualizations</h3>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li><strong>KPI Cards:</strong> Quick overview of critical metrics</li>
+            <li><strong>Histogram:</strong> Sales distribution by renovation timeline</li>
+            <li><strong>Pie Chart:</strong> House age distribution by renovation status</li>
+            <li><strong>Grouped Bar Chart:</strong> Property features analysis by age group</li>
+            <li><strong>Interactive Filters:</strong> Custom analysis by price and age</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h3>🎓 Key Insights</h3>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li><strong>Renovation Rate:</strong> Only 4.2% of properties have been renovated (914 out of 21,609)</li>
+            <li><strong>Average Price:</strong> The median sale price is $450,000 with a mean of $511,619</li>
+            <li><strong>Age Distribution:</strong> Properties range from 3 to 118 years old, with most clustering in 20-50 year range</li>
+            <li><strong>Feature Correlation:</strong> Newer homes tend to have more bathrooms and bedrooms</li>
+            <li><strong>Market Segments:</strong> Both heritage and modern properties represent significant market segments</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h3>💼 Use Cases</h3>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li>Real Estate Agents: Understand market trends and pricing strategies</li>
+            <li>Investors: Identify market opportunities and property value patterns</li>
+            <li>Researchers: Analyze housing market dynamics and trends</li>
+            <li>Policy Makers: Understand housing stock composition and renovation needs</li>
+            <li>Developers: Identify gaps in the market and renovation potential</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h3>📞 Technical Support</h3>
+        <p>
+            This dashboard is built using Flask and Tableau Public. For questions about the data or analysis,
+            please refer to the documentation or contact the project team.
+        </p>
+    </div>
+
+    <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center;">
+        <h3 style="color: #2c3e50; margin-bottom: 20px;">Ready to Explore?</h3>
+        <div class="button-group">
+            <a href="/dashboard" class="btn">📊 Go to Dashboard</a>
+            <a href="/storyboard" class="btn btn-secondary">📖 View Story</a>
+            <a href="/" class="btn" style="background-color: #764ba2;">🏠 Back to Home</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
